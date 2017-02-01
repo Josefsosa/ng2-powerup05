@@ -1,0 +1,17 @@
+{
+  "pageType": "page.category.pageType",
+  "primaryCategory": "page.category.primaryCategory",
+  "subCategory": "page.category.subCategory",
+  "pageID": "page.pageID",
+  "pageName": "page.pageName",
+  "currencyCode": "page.currencyCode",
+  "language": "page.language",
+  "geoRegion": "page.geoRegion",
+  "channel": "page.category.channel",
+  "subChannel": "page.category.subChannel",
+  "flowName": "page.category.flowName",
+  "cartID": "cart.cartID",
+  "TMobileID": "customer.TMobileID",
+  "transactionID": "transaction.transactionID",
+  "userTMobileID": "user.TMobileID"
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Accessibility Dashboard</title>
+        <style>
+          code {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+          }
+          .title {
+            padding: 30px 0;
+          }
+          .tab-pane {
+            padding: 20px;
+          }
+          .badge-danger {
+            background-color: #d9534f;
+            border-color: #d43f3a;
+          }
+          .badge-warning {
+            background-color: #f0ad4e;
+            border-color: #eea236;
+          }
+          .badge-primary {
+            background-color: #337ab7;
+            border-color: #2e6da4;
+          }
+          .badge-white {
+            background-color: white;
+            color: black;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="text-center title">Accessibility Dashboard</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#grid" role="tab" data-toggle="tab">Grid</a></li>
+                <li role="presentation" class="active"><a href="#list" role="tab" data-toggle="tab">List</a></li>
+              </ul>
+              <div class="row">
+                <div class="tab-content">
+                 <div role="tabpanel" class="tab-pane" id="grid">
+                   {{#each summary}}
+                       <div class="col-xs-12 col-md-6">
+                         <div class="panel panel-default">
+                           <div class="panel-heading">
+                             <a href="#" data-toggle="modal" data-target="#details{{this.index}}">
+                               {{this.url}}
+                             </a>
+                           </div>
+                           <div class="panel-body">
+                             <ul class="list-inline">
+                               <li>
+                                 <h4 style="margin: 0;">
+                                   <label class="label label-danger" style="padding-top: 4px; padding-bottom: 6px;">
+                                     Errors <span class="badge badge-white">{{this.errors}}</span>
+                                   </label>
+                                 </h4>
+                               </li>
+                               <li>
+                                 <h4 style="margin: 0;">
+                                   <label class="label label-warning" style="padding-top: 4px; padding-bottom: 6px;">
+                                     Warnings <span class="badge badge-white">{{this.warnings}}</span>
+                                   </label>
+                                 </h4>
+                               </li>
+                               <li>
+                                 <h4 style="margin: 0;">
+                                   <label class="label label-primary" style="padding-top: 4px; padding-bottom: 6px;">
+                                     Notices <span class="badge badge-white">{{this.notices}}</span>
+                                   </label>
+                                 </h4>
+                               </li>
+                             </ul>
+                           </div>
+                         </div>
+                       </div>
+                   {{/each}}
+                 </div>
+                 <div role="tabpanel" class="tab-pane active" id="list">
+                   <table class="table table-hover">
+                     <thead>
+                       <th width="">Path</th>
+                       <th class="text-center">
+                         <h4><label class="label label-danger">Errors</label></h4>
+                       </th>
+                       <th class="text-center">
+                         <h4><label class="label label-warning">Warnings</label><h4>
+                       </th>
+                       <th class="text-center">
+                         <h4><label class="label label-primary">Notices</label></h4>
+                       </th>
+                     </thead>
+                     <tbody>
+                       {{#each summary}}
+                         <tr>
+                           <td>
+                             <a href="#" data-toggle="modal" data-target="#details{{this.index}}">
+                               {{this.url}}
+                             </a>
+                           </td>
+                           <td class="text-center">{{this.errors}}</td>
+                           <td class="text-center">{{this.warnings}}</td>
+                           <td class="text-center">{{this.notices}}</td>
+                         </tr>
+                       {{/each}}
+                     </tbody>
+                   </table>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+          {{#each summary}}
+          <div class="modal fade" id="details{{this.index}}" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="modalTitle">{{this.url}}</h4>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#errors{{this.index}}" role="tab" data-toggle="tab">Errors <span class="badge badge-danger"> {{this.errors}}</span></a></li>
+                    <li role="presentation"><a href="#warnings{{this.index}}" role="tab" data-toggle="tab">Warnings <span class="badge badge-warning"> {{this.warnings}}</span></a></li>
+                    <li role="presentation"><a href="#notices{{this.index}}" role="tab" data-toggle="tab">Notices <span class="badge badge-primary"> {{this.notices}}</span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="errors{{this.index}}">
+                      {{#each this.errorList}}
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            {{this.code}}
+                          </div>
+                          <div class="panel-body">
+                              {{this.message}}
+                          </div>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <code>
+                                  {{this.context}}
+                                </code>
+                              </li>
+                            </ul>
+                        </div>
+                      {{/each}}
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="warnings{{this.index}}">
+                        {{#each this.warningList}}
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              {{this.code}}
+                            </div>
+                            <div class="panel-body">
+                                {{this.message}}
+                            </div>
+                              <ul class="list-group">
+                                <li class="list-group-item">
+                                  <code>
+                                    {{this.context}}
+                                  </code>
+                                </li>
+                              </ul>
+                          </div>
+                        {{/each}}
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="notices{{this.index}}">
+                      {{#each this.noticeList}}
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            {{this.code}}
+                          </div>
+                          <div class="panel-body">
+                              {{this.message}}
+                          </div>
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <code>
+                                  {{this.context}}
+                                </code>
+                              </li>
+                            </ul>
+                        </div>
+                      {{/each}}
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+       </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

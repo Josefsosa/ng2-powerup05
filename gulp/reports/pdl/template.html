@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>PDL Report</title>
+        <style>
+            .badge-success {
+                background-color: green;
+            }
+            .badge-error {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">PDL Report</h1>
+            <p class="col-md-2">Total Pages: <span class="badge">{{total}}</span></p>
+            {{#if table}}
+            <table class="table table-hover table-sm table-striped">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>URL</th>
+                        <th>Type</th>
+                        <th>Primary Category</th>
+                        <th>Sub Category</th>
+                        <th>Page ID</th>
+                        <th>Page Name</th>
+                        <th>Currency Code</th>
+                        <th>Language</th>
+                        <th>Geo Region</th>
+                        <th>Channel</th>
+                        <th>Sub Channel</th>
+                        <th>Flow Name</th>
+                        <th>Cart ID</th>
+                        <th>T-Mobile ID</th>
+                        <th>Transaction ID</th>
+                        <th>User T-Mobile ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each pages}}
+                        <tr>
+                            <td><a href="{{this.url}}" target="_blank">{{this.urlPath}}</a></td>
+                            <td>{{this.pageType}}</td>
+                            <td>{{this.primaryCategory}}</td>
+                            <td>{{this.subCategory}}</td>
+                            <td>{{this.pageID}}</td>
+                            <td>{{this.pageName}}</td>
+                            <td>{{this.currencyCode}}</td>
+                            <td>{{this.language}}</td>
+                            <td>{{this.geoRegion}}</td>
+                            <td>{{this.channel}}</td>
+                            <td>{{this.subChannel}}</td>
+                            <td>{{this.flowName}}</td>
+                            <td>{{this.cartID}}</td>
+                            <td>{{this.TMobileID}}</td>
+                            <td>{{this.transactionID}}</td>
+                            <td>{{this.userTMobileID}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{/if}}
+        </div>
+    </body>
+</html>

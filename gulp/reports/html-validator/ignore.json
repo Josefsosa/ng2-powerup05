@@ -1,0 +1,21 @@
+{
+  "attributes": [
+    "ui-sref",
+    "ng-click",
+    "ng-model",
+    "ng-submit"
+  ],
+  "elements": [
+    "login",
+    "customer-landing",
+    "accessory-list",
+    "cart",
+    "ui-view"
+  ],
+  "messages": [
+    "Start tag seen without seeing a doctype first.",
+    "Element “head” is missing a required instance of child element",
+    "This document appears to be written in English.",
+    "Consider adding a “lang” attribute to the “html” start tag to declare the language of this document."
+  ]
+}

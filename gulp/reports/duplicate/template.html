@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Duplicated Code Validation Report</title>
+        <style>
+            .badge-success {
+                background-color: green;
+            }
+            .badge-error {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Duplicated Code Validation Report</h1>
+            <p class="col-md-2">Clones: <span class="badge">{{statistics.clones}}</span></p>
+            <p class="col-md-2">Duplications: <span class="badge">{{statistics.duplications}}</span></p>
+            <p class="col-md-2">Files: <span class="badge">{{statistics.files}}</span></p>
+            <p class="col-md-2">Percentage: <span class="badge">{{statistics.percentage}}</span></p>
+            <p class="col-md-2">Lines: <span class="badge">{{statistics.lines}}</span></p>
+            {{#if statistics.table}}
+            <table class="table table-hover table-sm table-striped">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Lines</th>
+                        <th>Tokens</th>
+                        <th>First File</th>
+                        <th>Second File</th>
+                        <th>fragment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each duplicates}}
+                        <tr>
+                            <td>{{this.lines}}</td>
+                            <td>{{this.tokens}}</td>
+                            <td>Start: {{this.firstFile.start}}, Name: {{this.firstFile.name}}</td>
+                            <td>Start: {{this.secondFile.start}}, Name: {{this.secondFile.name}}</td>
+                            <td>{{this.fragment}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{/if}}
+        </div>
+    </body>
+</html>

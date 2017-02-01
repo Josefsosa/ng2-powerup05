@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>SEO Report</title>
+        <style>
+            body {
+                margin: 0 15px;
+            }
+            .badge-success {
+                background-color: green;
+            }
+            .badge-error {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="text-center">SEO Report</h1>
+            <p class="col-md-2">Total views: <span class="badge">{{total}}</span></p>
+            {{#if table}}
+            <table class="table table-hover table-sm table-striped">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>URL</th>
+                        <th>Status</th>
+                        <th>Content</th>
+                        <th>Level</th>
+                        <th>Title</th>
+                        <th>Page Word</th>
+                        <th>In Links</th>
+                        <th>Out Links</th>
+                        <th>Domain Links</th>
+                        <th>Social Links</th>
+                        <th>Page Level Links</th>
+                        <th>Charset</th>
+                        <th>Robots</th>
+                        <th>Description</th>
+                        <th>Heading Values</th>
+                        <th>Page Size (KB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each pages}}
+                        <tr>
+                            <td><a href="{{this.url}}">{{this.name}}</a></td>
+                            <td>{{this.page_status}}</td>
+                            <td>{{this.page_content}}</td>
+                            <td>{{this.page_level}}</td>
+                            <td>{{this.title}}</td>
+                            <td>{{this.page_word_count}}</td>
+                            <td>{{this.inlinks_count}}</td>
+                            <td>{{this.outlinks_count}}</td>
+                            <td>{{this.domain_links}}</td>
+                            <td>{{this.social_links}}</td>
+                            <td>{{this.page_level_links}}</td>
+                            <td>{{this.meta_charset}}</td>
+                            <td>{{this.meta_description}}</td>
+                            <td>{{this.meta_robots}}</td>
+                            <td>
+                                {{#each this.heading_values}}
+                                    {{this}}
+                                {{/each}}
+                            </td>
+                            <td>{{this.page_size}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{/if}}
+        </div>
+    </body>
+</html>

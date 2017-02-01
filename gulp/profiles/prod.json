@@ -1,0 +1,8 @@
+{
+  "serverUrl": "http://localhost:9005/",
+  "authUrl": "",
+  "localServer": {
+    "enabled": true,
+    "port": 9005
+  }
+}

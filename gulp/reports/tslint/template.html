@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>TSLint Validation Report</title>
+        <style>
+            .badge-success {
+                background-color: green;
+            }
+            .badge-error {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">TSLint Validation Report</h1>
+            <p>Total Lint Errors: <span class="badge badge-error">{{total}}</span></p>
+            <table class="table table-hover table-sm table-striped">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>No.</th>
+                        <th>File Path</th>
+                        <th>Failure</th>
+                        <th>Rule Name</th>
+                        <th>Start Position</th>
+                        <th>End Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each errors}}
+                        <tr>
+                            <td>{{this.index}}</td>
+                            <td>{{this.name}}</td>
+                            <td>{{this.failure}}</td>
+                            <td>{{this.ruleName}}</td>
+                            <td>Line: {{this.startPosition.line}}, Col: {{this.startPosition.character}}</td>
+                            <td>Line: {{this.endPosition.line}}, Col: {{this.endPosition.character}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>HTML Validation Report</title>
+        <style>
+            .badge-success {
+                background-color: green;
+            }
+            .badge-error {
+                background-color: red;
+            }
+            .bottom-space {
+              margin-bottom: 30px;
+            }
+            .top-space {
+              margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center bottom-space">HTML Validation Report</h1>
+            <p class="col-md-4">Total Files Checked: <span class="badge">{{totalfailes}}</span></p>
+            <p class="col-md-4">File passed: <span class="badge badge-success">{{filessucceeded}}</span></p>
+            <p class="col-md-4">File Failed: <span class="badge badge-error">{{filesfiled}}</span></p>
+            <div class="clearfix"></div>
+            <table class="table table-sm table-striped top-space">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Sr No.</th>
+                        <th>File Path</th>
+                        <th>HTML Errors</th>
+                        <th>Line</th>
+                        <th>Col</th>
+                        <th>Severity Level</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each errors}}
+                        {{#each this.errors}}
+                            {{#if first}}
+                            <tr>
+                                <td rowspan="{{../rowspan}}">{{../index}}</td>
+                                <td rowspan="{{../rowspan}}">{{../pathFile}}</td>
+                                <td>{{this.htmlError}}</td>
+                                <td>{{this.line}}</td>
+                                <td>{{this.col}}</td>
+                                <td>{{this.severity}}</td>
+                                <td rowspan="{{../rowspan}}">{{../score}}</td>
+                            </tr>
+                            {{else}}
+                            <tr>
+                                <td>{{this.htmlError}}</td>
+                                <td>{{this.line}}</td>
+                                <td>{{this.col}}</td>
+                                <td>{{this.severity}}</td>
+                            </tr>
+                            {{/if}}
+                        {{/each}}
+                    {{/each}}
+                </tbody>
+            </table>
+            <div>
+                <h2>Severity Symbology:</h2>
+                <p><span class="badge">l</span> = Low</p>
+                <p><span class="badge">m</span> = Medium</p>
+                <p><span class="badge">h</span> = High</p>
+                <p><span class="badge">NF</span> = Not Found</p>
+            </div>
+        </div>
+    </body>
+</html>

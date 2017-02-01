@@ -1,0 +1,738 @@
+[
+    {
+        "severityMessage": "A slash was not immediately followed by “>”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag had attributes.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “span<”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “p” seen, but there were open elements.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “span”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “a”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Start tag “a” seen but an element of the same type was already open.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "No space between attributes.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Saw “<” when expecting an attribute name. Probable cause: Missing “>” immediately before.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “<” is not serializable as XML 1.0.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "End tag “h3” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “a” violates nesting rules.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “img” is missing required attribute “src”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "“",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "“=” at the start of an unquoted attribute value. Probable cause: Stray duplicate equals sign.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "A table row was 4 columns wide, which is less than the column count established by the first row (8).",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “!” is not serializable as XML 1.0.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “div”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “href” without an explicit value seen. The attribute may be dropped by IE7.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Consecutive hyphens did not terminate a comment. “--” is not permitted inside a comment, but e.g. “- -” is.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “href”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “class”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-class”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "The element “button” must not appear as a descendant of the “a” element.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “;",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “required” is only allowed when the input type is “checkbox”, “date”, “datetime”, “datetime-local”, “email”, “file”, “month”, “number”, “password”, “radio”, “search”, “tel”, “text”, “time”, “url”, or “week”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "The “for” attribute of the “label” element must refer to a non-hidden form control.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “autocomplete” is only allowed when the input type is “color”, “date”, “datetime”, “datetime-local”, “email”, “month”, “number”, “password”, “range”, “search”, “tel”, “text”, “time”, “url”, or “week”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “minlength” is only allowed when the input type is “email”, “password”, “search”, “tel”, “text”, or “url”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “span”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Cannot recover after last error. Any further errors will be ignored.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “prepaidconfirmationctrl.retailchannel)?” is not serializable as XML 1.0.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “div” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “100%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “'title'” is not serializable as XML 1.0.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “div”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “label”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “label”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "No “p” element in scope but a “p” end tag seen.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate ID “”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Saw “=” when expecting an attribute name. Probable cause: Attribute name missing.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “=",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “=",
+        "Severity": "h"
+    },
+    {
+        "severityMessage": "End tag “button” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “” for attribute “name” on element “textarea”: Must not be empty.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate ID “transaction-history-assisted”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “transaction-history-assisted” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “requestAdjustmentCtrl.requestAdjustmentDetails.contentData.passowordMaxLength” for attribute “maxlength” on element “input”: Expected a digit but saw “r” instead.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate ID “usage-details-datastash-assisted”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “usage-details-datastash-assisted” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “return-form full-height” for attribute “id” on element “div”: An ID must not contain whitespace.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Character reference was not terminated by a semicolon.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “text ” for attribute “type” on element “input”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-href”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-show”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “addressLine1”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “addressLine2”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “billingAndPaymentPageId”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “imei-block-check-add-block”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “product-selector-plan-first-multi-line”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “shop-right-pane”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “lookup-advantage-sort”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “lookup-advantage-sort” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “form”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “form” does not need a “role” attribute.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The “aria-labelledby” attribute must point to an element in the same document.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “type”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-controller”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The “label” element may contain at most one “button”, “input”, “keygen”, “meter”, “output”, “progress”, “select”, or “textarea” descendant.",
+        "Severity": "L"
+    },
+    {
+        "severityMessage": "“label” element with multiple labelable descendants.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “checked”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “br”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “theme”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-disabled”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “form” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “placeholder” is only allowed when the input type is “email”, “number”, “password”, “search”, “tel”, “text”, or “url”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-pattern”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “name”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “ng-form”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “ng-form”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-blur”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "End tag “h5” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “button”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “focus” for attribute “autofocus” on element “input”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “pos-till-opening”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “pos-till-opening” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "A table row was 2 columns wide, which is less than the column count established by the first row (3).",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Start tag “hr” seen in “table”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "A table row was 3 columns wide, which is less than the column count established by the first row (4).",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Row 2 of a row group established by a “tbody” element has no cells beginning on it.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "A table row was 0 columns wide, which is less than the column count established by the first row (8).",
+        "Severity": "h"
+    },
+    {
+        "severityMessage": "A table row was 3 columns wide and exceeded the column count established by the first row (2).",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “refundbox”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “refundbox” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "A table row was 1 columns wide, which is less than the column count established by the first row (5).",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "A table row was 7 columns wide, which is less than the column count established by the first row (8).",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Row 3 of a row group established by a “tbody” element has no cells beginning on it.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “ui-select”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “” for attribute “action” on element “form”: Must be non-empty.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element name “ng-class=",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “script”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “h6” seen, but there were open elements.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "End tag “p” implied, but there were open elements.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "End tag “ui-select” seen, but there were open elements.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "End tag for “body” seen, but there were unclosed elements.",
+        "Severity": "h"
+    },
+    {
+        "severityMessage": "Unclosed element “ui-permission”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-model”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Self-closing syntax (“/>”) used on a non-void HTML element. Ignoring the slash and treating as a start tag.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Duplicate attribute “required”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&”.)",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-if”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Quote “",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Heading cannot be a child of another heading.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “a”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “source” is missing required attribute “src”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “carousel”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “h6”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “ng-include”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “sservice-detail-selector”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “strong”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “ui-permission”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "The “align” attribute on the “td” element is obsolete. Use CSS instead.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Bad value “integer” for attribute “type” on element “input”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-keyup”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “Â ” is not serializable as XML 1.0.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Bad value “100%” for attribute “width” on element “object”: Expected a digit but saw “%” instead.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “100%” for attribute “height” on element “object”: Expected a digit but saw “%” instead.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “ui-select”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “input”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Document uses the Unicode Private Use Area(s), which should not be used in publicly exchanged documents. (Charmod C073)",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The “strike” element is obsolete. Use CSS instead.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The element “h6” must not appear as a descendant of the “th” element.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “h3”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “addressLine1” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “addressLine2” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “billingAndPaymentPageId” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “imei-block-check-add-block” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “product-selector-plan-first-multi-line” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “shop-right-pane” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “h6”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “line-carousel”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “maxlength” is only allowed when the input type is “email”, “password”, “search”, “tel”, “text”, or “url”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “ng-class=",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate attribute “ng-click”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Unclosed element “service-detail-selector”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “softgood-plan”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “stron”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “ui-select-match”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “ul”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Duplicate ID “select-item”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "The first occurrence of ID “select-item” was here.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Start tag seen without seeing a doctype first. Expected e.g. “”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Element “head” is missing a required instance of child element “title”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “ng-repeat” not allowed on element “div” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Bad value “{{::item.image}}” for attribute “src” on element “img”: Illegal character in path segment: “{” is not allowed.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “ng-click” not allowed on element “button” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “ng-show” not allowed on element “h1” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Start tag seen without seeing a doctype first. Expected e.g. “”.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “head” is missing a required instance of child element “title”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “ng-bind” not allowed on element “span” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Stray end tag “a”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Start tag seen without seeing a doctype first. Expected e.g. “”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Element “head” is missing a required instance of child element “title”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “h4”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Stray end tag “i”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "End tag “div” seen, but there were open elements.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Unclosed element “span”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Start tag seen without seeing a doctype first. Expected e.g. “”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Element “head” is missing a required instance of child element “title”.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “ui-sref” not allowed on element “a” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “alt” not allowed on element “i” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “ng-click” not allowed on element “a” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Attribute “alt” not allowed on element “i” at this point.",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “ng-app” not allowed on element “body” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “common-header” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+        "Severity": "m"
+    },
+    {
+        "severityMessage": "Attribute “ui-view” not allowed on element “div” at this point.",
+        "Severity": "l"
+    },
+    {
+        "severityMessage": "Element “common-footer” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+        "Severity": "m"
+    }
+]
