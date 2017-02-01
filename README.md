@@ -53,7 +53,7 @@ and it'll compile all E2E spec files in `/src/test/e2e/*.spec.ts`, boot up Selen
 ## Production
 > All build tasks will run the `gulp test`, the bundle will only be created if the test passed.
 
-> For more details, visit [Continuous Integration  wiki](base/Continuous-Integration)
+> For more details, visit [Continuous Integration  wiki](https://github.com/Josefsosa/ng2-powerup05/wiki)
 
 You can create production build by running:
 ```bash
