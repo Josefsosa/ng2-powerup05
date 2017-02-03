@@ -88,41 +88,41 @@ Report Name	                      Description
 
 ## Backlog of functionality remaining
 ```
-      Type	Story											                    PTS
-- [ ] DOC		DOC - PDL/Analytics for NG 2 Architecture		    3
-- [ ] DEV		DEV - PDL/Analytics for NG 2 Architecture		    5
-- [ ] DOC		DOC - Search on the CSL-WebPlatform				      3
-- [ ] DEV		DEV - Search on the CSL-WebPlatform				      5
-- [ ] DOC		DOC - AEM/NG Authoring Patterns & Guidelines	  3
-- [ ] DEV 	DEV - AEM/NG Authoring Patterns Implementation	5
-- [ ] DEV		DEV - Authentication OAuth2 Integration			    5
-- [ ] DEV		DEV - Angular 2 / AEM 6.X Interaction patterns	5
-- [ ] DOC		DOC – AEM NG 2 Page Personalization				      3
-- [ ] DEV		DEV – AEM NG 2 Page Personalization				      5
-- [ ] DOC		DOC - Angular 2.0 and CQ5.6 Support				      5
-- [ ] DEV		DEV- AEM CQ6 and NG2 for CMS platform			      5
-- [ ] DOC		DOC- Angular 2.0 Component Architecture			    3
-- [ ] DOC		DOC- UI NG 2.0 Performance Best Practices		    5
-- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		  3
-- [ ] DOC		DOC - 2.0 TS Development Guidelines				      3
-- [ ] DOC		DOC - API needed CSL-Platform team for NG UI	  3
-- [ ] DEV		DEV - API needed CSL-Platform team for NG UI	  5
-- [ ] DOC		DOC - IDE Recommendation						            3
-- [ ] DOC		DOC – AEM Preview Environment					          3
-- [ ] DEV		DEV – AEM Preview Environment					          5
-- [ ] DOC		DOC – NG 2.0 Security Architecture				        3
-- [ ] DEV		DEV - Authentication OAuth2 Integration			    5
-- [ ] DOC		DOC – NG 2.0 Data persistence					          3
-- [ ] DEV		DEV – NG 2.0 Protected Routes					          5
-- [ ] DOC		DOC – NG 2.0 Sanky Graph API Reporting			      3
-- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		  5
-- [ ] DOC		DOC - Adobe Marketing Cloud Integration			    5
-- [ ] DOC		DOC - CDN Integration							              3
-- [ ] DOC		DOC - Modularize 3rd Party integration 			    3
-- [ ] DOC		DOC - NativeScript export to mobile app			    3
-- [ ] DOC		DOC - Angular Material 2 for Accessibility		  3
-- [ ] DOC		DOC - AME/NG Preview Environment				        3
-- [ ] DEV		DEV - Components Performance Report Slow/Comps  5
+      Type	    Story											                    PTS
+- [ ] DOC		DOC - PDL/Analytics for NG 2 Architecture		                    3
+- [ ] DEV		DEV - PDL/Analytics for NG 2 Architecture		                    5
+- [ ] DOC		DOC - Search on the CSL-WebPlatform				                    3
+- [ ] DEV		DEV - Search on the CSL-WebPlatform				                    5
+- [ ] DOC		DOC - AEM/NG Authoring Patterns & Guidelines	                    3
+- [ ] DEV 	    DEV - AEM/NG Authoring Patterns Implementation	                    5
+- [ ] DEV		DEV - Authentication OAuth2 Integration			                    5
+- [ ] DEV		DEV - Angular 2 / AEM 6.X Interaction patterns	                    5
+- [ ] DOC		DOC – AEM NG 2 Page Personalization				                    3
+- [ ] DEV		DEV – AEM NG 2 Page Personalization				                    5
+- [ ] DOC		DOC - Angular 2.0 and CQ5.6 Support				                    5
+- [ ] DEV		DEV- AEM CQ6 and NG2 for CMS platform			                    5
+- [ ] DOC		DOC- Angular 2.0 Component Architecture			                    3
+- [ ] DOC		DOC- UI NG 2.0 Performance Best Practices		                    5
+- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		                    3
+- [ ] DOC		DOC - 2.0 TS Development Guidelines				                    3
+- [ ] DOC		DOC - API needed CSL-Platform team for NG UI	                    3
+- [ ] DEV		DEV - API needed CSL-Platform team for NG UI	                    5
+- [ ] DOC		DOC - IDE Recommendation						                    3
+- [ ] DOC		DOC – AEM Preview Environment					                    3
+- [ ] DEV		DEV – AEM Preview Environment					                    5
+- [ ] DOC		DOC – NG 2.0 Security Architecture				                    3
+- [ ] DEV		DEV - Authentication OAuth2 Integration			                    5
+- [ ] DOC		DOC – NG 2.0 Data persistence					                    3
+- [ ] DEV		DEV – NG 2.0 Protected Routes					                    5
+- [ ] DOC		DOC – NG 2.0 Sanky Graph API Reporting			                    3
+- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		                    5
+- [ ] DOC		DOC - Adobe Marketing Cloud Integration			                    5
+- [ ] DOC		DOC - CDN Integration							                    3
+- [ ] DOC		DOC - Modularize 3rd Party integration 			                    3
+- [ ] DOC		DOC - NativeScript export to mobile app			                    3
+- [ ] DOC		DOC - Angular Material 2 for Accessibility		                    3
+- [ ] DOC		DOC - AME/NG Preview Environment				                    3
+- [ ] DEV		DEV - Components Performance Report Slow/Comps                      5
 ```
 
 
